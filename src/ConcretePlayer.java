@@ -1,9 +1,11 @@
 public class ConcretePlayer implements Player{
 
-    private short playerNum;
-    private short numOfWins = 0;
+    //data
+    private int playerNum;
+    private int numOfWins = 0;
 
-    public ConcretePlayer(short playerNum){
+    //constructor
+    public ConcretePlayer(int playerNum){
 //        @TODO handle invalid value
 //        if(playerNum != 1 && playerNum != 2){
 //            System.out.println("invalid number for playernum");
@@ -12,6 +14,7 @@ public class ConcretePlayer implements Player{
         this.playerNum = playerNum;
     }
 
+    //functions
     @Override
     public boolean isPlayerOne() {
         return playerNum == 1;

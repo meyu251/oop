@@ -1,11 +1,15 @@
 public class King extends ConcretePiece{
-    @Override
-    public Player getOwner() {
-        return null;
+
+    //data
+
+    //constructor
+    public King(Player owner){
+        this.type = "King";
+        this.owner = owner;
     }
 
-    @Override
-    public String getType() {
-        return "";
+    //functions
+    public String getType(){
+        return this.type;
     }
 }

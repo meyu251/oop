@@ -1,13 +1,18 @@
 public class Pawn extends ConcretePiece{
 
+    //data
+    private int numOfEatenPieces;
 
-    @Override
-    public Player getOwner() {
-        return null;
+    //constructor
+    public Pawn(Player owner){
+        this.numOfEatenPieces = 0;
+        this.type = "Pawn";
+        this.owner = owner;
     }
 
-    @Override
-    public String getType() {
-        return "";
+    //functions
+    public String getType(){
+        return this.type;
     }
+
 }
