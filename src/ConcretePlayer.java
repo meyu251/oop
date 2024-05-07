@@ -6,11 +6,6 @@ public class ConcretePlayer implements Player{
 
     //constructor
     public ConcretePlayer(int playerNum){
-//        @TODO handle invalid value
-//        if(playerNum != 1 && playerNum != 2){
-//            System.out.println("invalid number for playernum");
-//            return ;
-//        }
         this.playerNum = playerNum;
     }
 

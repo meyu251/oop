@@ -1,35 +1,35 @@
 public class Position {
 
     //data
-    private int x;
-    private int y;
+    private int row;
+    private int col;
     private boolean empty = true;
-    private ConcretePiece piece = null;
+//    private ConcretePiece piece = null;
 
     //constructor
     public Position(int x, int y){
-        this.x = x;
-        this.y = y;
+        this.row = x;
+        this.col = y;
     }
 
     //functions
-    public int getX(){
-        return this.x;
+    public int getRow(){
+        return this.row;
     }
 
-    public int getY(){
-        return this.y;
+    public int getCol(){
+        return this.col;
     }
 
     public boolean isEmpty(){
         return this.empty;
     }
 
-    public ConcretePiece getPiece() {
-        return this.piece;
-    }
-
-    public void setPiece(ConcretePiece piece){
-        this.piece = piece;
-    }
+//    public ConcretePiece getPiece() {
+//        return this.piece;
+//    }
+//
+//    public void setPiece(ConcretePiece piece){
+//        this.piece = piece;
+//    }
 }
