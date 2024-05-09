@@ -4,8 +4,8 @@ public class King extends ConcretePiece{
 
     //constructor
     public King(Player owner){
+        super(owner);
         this.type = "\u265A"; //Unicode character ♚ for king
-        this.owner = owner;
     }
 
     //functions

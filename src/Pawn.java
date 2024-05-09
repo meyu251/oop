@@ -5,9 +5,9 @@ public class Pawn extends ConcretePiece{
 
     //constructor
     public Pawn(Player owner){
+        super(owner);
         this.numOfEatenPieces = 0;
         this.type = "\u265F"; // Unicode character ♟ for pawn
-        this.owner = owner;
     }
 
     //functions
